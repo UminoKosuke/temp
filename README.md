@@ -29,6 +29,8 @@ uv run lerobot-teleoperate \
   --display_data=true
 ```
 
+## データ収集
+
 ```
 uv run lerobot-record \
   --robot.type=ugo_pro \
@@ -45,9 +47,4 @@ uv run lerobot-record \
   --dataset.single_task="$TASK_NAME" \
   --dataset.num_episodes=1 \
   --resume=true
-```
-
-
-```
-TOKEN=
 ```
