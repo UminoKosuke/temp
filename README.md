@@ -4,47 +4,9 @@
 
 - https://github.com/ugo-plus/lerobot-robot-ugo-pro
 
+## データ収集関連ドキュメント
 
-## セットアップ
-
-```
-source setup_env1.sh or source setup_env2.sh
-```
-
-## カメラ確認
-
-```
-uv run lerobot-find-cameras
-```
-
-## テレオペ
-
-```
-uv run lerobot-teleoperate \
-  --robot.type=ugo_pro \
-  --robot.id=my_ugo_pro \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 10, width: 640, height: 480, fps: 30}}" \
-  --teleop.type=ugo_bilcon \
-  --teleop.id=my_ugo_bilcon \
-  --display_data=true
-```
-
-## データ収集
-
-```
-uv run lerobot-record \
-  --robot.type=ugo_pro \
-  --robot.id=my_ugo_pro \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 10, width: 640, height: 480, fps: 30}}" \
-  --teleop.type=ugo_bilcon \
-  --teleop.id=my_ugo_bilcon \
-  --display_data=false \
-  --dataset.fps=30 \
-  --dataset.reset_time_s=10 \
-  --dataset.episode_time_s=20 \
-  --dataset.push_to_hub=false \
-  --dataset.repo_id=$REPO_ID \
-  --dataset.single_task="$TASK_NAME" \
-  --dataset.num_episodes=1 \
-  --resume=true
-```
+- [データ収集前と収集後にやること](./everyday_todo.md)
+- [データ収集時の指示文を変えるときにやること](./chage_task_instraction.md)
+- [データ収集方法、ロボット操作方法に関すること](./data_collection.md.md)
+- [データ収集計画](./data_collection_plan.md)
