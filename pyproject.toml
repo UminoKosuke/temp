@@ -1,0 +1,10 @@
+[project]
+name = "ntt-us"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "hf>=1.1.0",
+    "lerobot-robot-ugo-pro>=1.0.0",
+]
