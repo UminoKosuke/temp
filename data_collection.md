@@ -38,7 +38,7 @@ uv run lerobot-record \
   --display_data=false \
   --dataset.fps=30 \
   --dataset.reset_time_s=10 \
-  --dataset.episode_time_s=20 \
+  --dataset.episode_time_s=45 \
   --dataset.push_to_hub=false \
   --dataset.repo_id=$REPO_ID \
   --dataset.single_task="$TASK_NAME" \
