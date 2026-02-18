@@ -2,6 +2,4 @@
 
 2/18、2/29、2/20、2/24の4日間で以下のデータを収集
 
-[目標数量](data.png)
-
-<img src="./data.png" alt="データ収集計画" title="データ収集計画">
+<img src="./data_collection.png" alt="データ収集計画" title="データ収集計画">
