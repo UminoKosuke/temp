@@ -8,7 +8,7 @@
 
 - `source setup_circle.sh`
 
-その後以下のコマンドを実行して、`Pick up the package marked with a circle and place it in the box marked with a circle.`が表示されることを確認する。
+その後以下のコマンドを実行して、`Pick up the package marked with a circle and place it in the tray marked with a circle.`が表示されることを確認する。
 
 - echo $TASK_NAME
 
@@ -18,6 +18,6 @@ X印の箱をpick and placeする場合には以下のコマンドを実行す�
 
 - `source setup_cross.sh`
 
-その後以下のコマンドを実行して、`Pick up the package marked with a cross and place it in the box marked with a cross.`が表示されることを確認する。
+その後以下のコマンドを実行して、`Pick up the package marked with a cross and place it in the tray marked with a cross.`が表示されることを確認する。
 
 - echo $TASK_NAME

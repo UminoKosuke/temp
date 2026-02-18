@@ -18,7 +18,7 @@ vscodeで以下のコマンドを実行して、テレオペできることを�
 uv run lerobot-teleoperate \
   --robot.type=ugo_pro \
   --robot.id=my_ugo_pro \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 10, width: 640, height: 480, fps: 30}}" \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 10, width: 640, height: 480, fps: 30}}" \
   --teleop.type=ugo_bilcon \
   --teleop.id=my_ugo_bilcon \
   --display_data=true
@@ -32,7 +32,7 @@ vscodeで以下のコマンドを実行して、データ収集を開始する�
 uv run lerobot-record \
   --robot.type=ugo_pro \
   --robot.id=my_ugo_pro \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 10, width: 640, height: 480, fps: 30}}" \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 6, width: 640, height: 480, fps: 30}, left: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}, right: {type: opencv, index_or_path: 10, width: 640, height: 480, fps: 30}}" \
   --teleop.type=ugo_bilcon \
   --teleop.id=my_ugo_bilcon \
   --display_data=false \
