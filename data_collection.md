@@ -38,7 +38,7 @@ uv run lerobot-record \
   --display_data=false \
   --dataset.fps=30 \
   --dataset.reset_time_s=10 \
-  --dataset.episode_time_s=45 \
+  --dataset.episode_time_s=60 \
   --dataset.push_to_hub=false \
   --dataset.repo_id=$REPO_ID \
   --dataset.single_task="$TASK_NAME" \
@@ -69,13 +69,14 @@ __データ収集後、タスクが成功したか失敗したかメモをとる
 
 失敗の条件
 
-- recoding 時間終了までに作業を完了できなかった（13まで完了できていない）
+- recoding 時間終了までに作業を完了できなかった（16まで完了できていない）
 - 腕を机にぶつけてしまった
-- 郵便物を横移動させたときに郵便受けに郵便物をぶつけてしまった。
+- 腕を郵便受けにぶつけてしまった
+- 郵便物を移動させたときに郵便受けに郵便物をぶつけてしまった。
 
 成功の条件
 
-- 時間内に作業を完了させた
+- 時間内に作業を完了させた（16まで完了している）
 - 一度掴み取ろうとして、掴み損ねたが、リトライして成功している
 
 ## 注意事項
